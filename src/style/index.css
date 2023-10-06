@@ -1,0 +1,31 @@
+.scrolling-div > img {
+  width: 160px;
+  height: 160px;
+
+  /* top: calc(100% - 160px); */
+}
+.scrolling-div {
+  width: 160px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #ffe67b;
+  z-index: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  aspect-ratio: 1/1;
+}
+.wave {
+  animation: waveanimation 1s infinite;
+}
+
+@keyframes waveanimation {
+  0% {
+    rotate: 0deg;
+  }
+  50% {
+    rotate: 30deg;
+  }
+  100% {
+    rotate: 0deg;
+  }
+}
