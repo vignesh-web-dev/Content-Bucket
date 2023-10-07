@@ -36,6 +36,3 @@ body {
   pointer-events: none;
   z-index: 199;
 }
-.para:hover + .sub {
-  color: red;
-}

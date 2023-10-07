@@ -5,20 +5,18 @@ import "../app/globals.css";
 import ScrollingDiv from "../components/scroll";
 
 export default function Home() {
-  const Element = useRef();
   const para = useRef(null);
-  const [divSize, setDivSize] = useState(100);
-  const [divTop, setDivTop] = useState(160);
   useEffect(() => {
+    let elem = document.getElementById("cursor");
     function size() {
-      document.getElementById("cursor").style.width = "80px";
-      document.getElementById("cursor").style.height = "80px";
-      document.getElementById("cursor").style.backgroundColor = "yellow";
+      elem.style.width = "80px";
+      elem.style.height = "80px";
+      elem.style.backgroundColor = "yellow";
     }
     function sizeReset() {
-      document.getElementById("cursor").style.width = "15px";
-      document.getElementById("cursor").style.height = "15px";
-      document.getElementById("cursor").style.backgroundColor = "#fff";
+      elem.style.width = "15px";
+      elem.style.height = "15px";
+      elem.style.backgroundColor = "#fff";
     }
     if (para && para.current) {
       para.current.addEventListener("mouseenter", size, false);
@@ -32,7 +30,7 @@ export default function Home() {
         <ScrollingDiv />
         <div className="w-11/12 max-w-screen-xl mx-auto h-[100dvh] flex flex-col justify-center md:gap-6 gap-4	items-center relative z-[1] ">
           <div className="flex justify-center gap-4 items-center">
-            <p className="text-7xl font-bold not-italic" ref={para}>
+            <p className="text-7xl font-bold not-italic hello" ref={para}>
               <span className="inline-block">Hello</span>
               <span className="inline-block">World!</span>
             </p>
