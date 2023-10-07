@@ -14,32 +14,25 @@ export default function ScrollingDiv() {
       gsap.to(".scrolling-div", {
         scrollTrigger: {
           trigger: ".scrolling-div",
-          start: "top 70%", // Trigger the animation when the top of the div hits the bottom of the viewport
-          end: "top 50%", // Reverse the animation when the bottom of the div hits the top of the viewport
+          start: "top 70%",
+          end: "top 50%",
           scrub: true,
-          // animation: anim,
           markers: true,
-          // containerAnimation: "scrollTween", // Smoothly scrub through the animation while scrolling
         },
         width: "200%",
         y: -400,
-        // Change the height of the div to 300px
       });
     } else if (window.innerWidth > 480) {
       gsap.registerPlugin(ScrollTrigger);
       gsap.to(".scrolling-div", {
         scrollTrigger: {
           trigger: ".scrolling-div",
-          start: "bottom 95%", // Trigger the animation when the top of the div hits the bottom of the viewport
-          end: "top 30%", // Reverse the animation when the bottom of the div hits the top of the viewport
+          start: "bottom 95%",
+          end: "top 30%",
           scrub: true,
-          // animation: anim,
-          markers: true,
-          // containerAnimation: "scrollTween", // Smoothly scrub through the animation while scrolling
         },
         width: "200%",
         y: -400,
-        // Change the height of the div to 300px
       });
     } else {
       gsap.registerPlugin(ScrollTrigger);
