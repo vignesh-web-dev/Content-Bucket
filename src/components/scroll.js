@@ -17,7 +17,6 @@ export default function ScrollingDiv() {
           start: "top 70%",
           end: "top 50%",
           scrub: true,
-          markers: true,
         },
         width: "200%",
         y: -400,
