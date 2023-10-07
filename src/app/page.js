@@ -28,7 +28,7 @@ export default function Home() {
     <>
       <section className="relative bg-white	text-black overflow-hidden ">
         <ScrollingDiv />
-        <div className="w-11/12 max-w-screen-xl mx-auto h-screen flex flex-col justify-center gap-4	items-center relative z-[1] ">
+        <div className="w-11/12 max-w-screen-xl mx-auto h-[100dvh] flex flex-col justify-center gap-4	items-center relative z-[1] ">
           <div className="flex justify-center gap-4 items-center">
             <p className="text-7xl font-bold not-italic" ref={para}>
               <span className="inline-block">Hello</span>
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
       </section>
       <section className="relative bg-[#ffe67b]">
-        <div className="w-11/12 max-w-screen-xl mx-auto h-screen flex justify-center items-center "></div>
+        <div className="w-11/12 max-w-screen-xl mx-auto h-[100dvh] flex justify-center items-center "></div>
       </section>
     </>
   );
