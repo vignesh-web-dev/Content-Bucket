@@ -38,8 +38,8 @@ export default function ScrollingDiv() {
       gsap.to(".scrolling-div", {
         scrollTrigger: {
           trigger: ".scrolling-div",
-          start: "bottom 85%",
-          end: "top 30%",
+          start: "bottom 98%",
+          end: "top 50%",
           scrub: true,
         },
         width: "200%",
@@ -50,7 +50,7 @@ export default function ScrollingDiv() {
 
   return (
     <div
-      className="scrolling-div absolute z-0 flex justify-center items-top top-[75%]"
+      className="scrolling-div absolute z-0 flex justify-center items-top top-[38%]"
       ref={divRef}
     >
       <img className="" src="profile.webp"></img>

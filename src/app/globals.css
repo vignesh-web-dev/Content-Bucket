@@ -23,11 +23,11 @@ body {
 }
 
 .cursor-style {
-  border: 5px solid #ffffff;
+  /* border: 5px solid #ffffff; */
   /* background-color: ; */
   mix-blend-mode: difference;
-  height: 25px;
-  width: 25px;
+  height: 15px;
+  width: 15px;
   background-color: #fff;
   border-radius: 100%;
   transform-origin: 100% 100%;
